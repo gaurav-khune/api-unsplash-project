@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WallP</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+
+        <a href="./home.html" class="logo">
+            <i data-lucide="image-play" class="logo-icon"></i>
+            <span>WallP</span>
+        </a>
+
+        <a href="./home.html" class="nav-hover">Home</a>
+
+        <a href="#" class="nav-hover about-btn">About</a>
+
+        <form class="search-form">
+            <input type="search" id="search-bar" placeholder="Search WallP" autocomplete="off" spellcheck="false"
+                required>
+            <button type="submit" id="search-btn">Search</button>
+        </form>
+
+        <div class="category-wrapper">
+
+            <button class="category-btn">
+                <span>&#9776;</span>
+                Category
+            </button>
+
+            <div class="category-menu">
+
+                <button data-category="nature">Nature</button>
+                <button data-category="cars">Cars</button>
+                <button data-category="anime">Anime</button>
+                <button data-category="technology">Technology</button>
+                <button data-category="gaming">Gaming</button>
+                <button data-category="space">Space</button>
+                <button data-category="animals">Animals</button>
+                <button data-category="dark">Dark</button>
+                <button data-category="mountains">Mountains</button>
+                <button data-category="ocean">Ocean</button>
+                <button data-category="forest">Forest</button>
+                <button data-category="flowers">Flowers</button>
+                <button data-category="city">City</button>
+                <button data-category="architecture">Architecture</button>
+                <button data-category="supercars">Supercars</button>
+                <button data-category="motorcycles">Motorcycles</button>
+                <button data-category="sports">Sports</button>
+                <button data-category="movies">Movies</button>
+                <button data-category="marvel">Marvel</button>
+                <button data-category="dc">DC</button>
+
+            </div>
+
+        </div>
+
+        <button class="fav-btn">Favourites <i class="fa-regular fa-heart"></i></button>
+
+    </div>
+
+    <div class="body">
+        <div class="carousel-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/wallpaper1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/wallpaper5.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/wallpaper3.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <h1>Personalise Your Device with Wallpapers</h1>
+                <p>Discover stunning wallpapers for desktop, mobile and tablet.</p>
+                <a href="#pw" id="popular-btn" class="popular-btn">
+                    Explore Popular Wallpapers
+                </a>
+            </div>
+        </div>
+
+        <div class="popular-wallpaper-text" id="pw">
+            <p id="wallpaperTitle">Our Popular Wallpapers</p>
+        </div>
+
+        <div id="wallpaperGrid"></div>
+        <div class="load-wallpaper-container">
+            <button id="load-wallpaper-btn">Load More Wallpapers</button>
+            <a href="#navbar" class="top">Back to top</a>
+        </div>
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <h2>WallP</h2>
+                <p>Discover and download stunning wallpapers for all your devices.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#">Categories</a>
+                <a href="#">Favourites</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 WallP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./home.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
